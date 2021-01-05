@@ -57,7 +57,7 @@ margin-left: 0 !important;
   padding: 2.6rem 0 0 2rem;
   position: inherit;
   margin-right: 25px;
-  color: grey;
+  color: black;
 }
 
 .fa-instagram:hover {
@@ -71,9 +71,11 @@ margin-left: 0 !important;
 .fa-facebook-square:hover {
   color: black;
 }
-
+a{
+  color: #43464b
+}
 a:visited {
-  color: grey;
+  color: #43464b;
 }
 
 .videoBackground {
@@ -119,7 +121,7 @@ footer{
   padding: 1rem 0 0 2rem;
   position: inherit;
   margin-right: 25px;
-  color: grey;
+  color: #43464b;
   font-size: 0.6rem;
 }
 /*SMARTPHONE*/
