@@ -33,7 +33,7 @@ body {
   font-size: 17px;
 }
 
-#contact{
+.contact{
   text-decoration: underline;
   font-weight: 400;
   color: black;
@@ -59,6 +59,15 @@ margin-left: 0 !important;
   margin-right: 25px;
   color: black;
 }
+.lang{
+  font-family: 'Advent Pro', sans-serif;
+  display: flex;
+  padding: 5px 35px;
+  position: inherit;
+  margin-right: 25px;
+  color: black;
+  font-weight: 600;
+}
 
 .fa-instagram:hover {
   color: black;
@@ -70,6 +79,10 @@ margin-left: 0 !important;
 
 .fa-facebook-square:hover {
   color: black;
+}
+
+#langEn{
+  padding-left: 10px;
 }
 a{
   color: #43464b
@@ -207,6 +220,7 @@ margin-top: 10%;
 width: inherit;
 
   margin-top: 80px;
+  margin-right: 120px;
 
 }
 
@@ -252,12 +266,30 @@ img {
   transform: scale(1.1);
 }
 
+/*contact page*/
+.topContainer{
+
+  margin-left: 250px;
+  margin-top: 80px;
+}
+.myPhoto{
+width: 400px;
+  position: relative;
+  padding: 5px;
+
+
+}
+
 @media (min-width: 1200px) {
   .container-gallery {
     max-width: 2000px;
     margin-right: 10%;
 
   }
+  .container-video{
+    margin-right: 10%
+  }
+
 }
 
 
@@ -267,19 +299,36 @@ img {
     margin-right: 10%;
     margin-top: 80px;
   }
+  .container-video{
+    margin-right: 6%
+  }
   iframe{
     position: relative;
       width: 100%;
-
   }
+  .myPhoto{
+    margin-right: 10%;
+  }
+
 }
 
 @media (max-width: 768px) {
   .container-gallery {
     column-count: 2;
-  max-width: 750px;
+  max-width: 768px;
     margin-right: 0;
     margin-top: 0;
+  }
+  .topContainer{
+  margin-left: 0;
+  margin-top: 0;
+
+  }
+
+  }
+
+  .container-video{
+    margin-right: 0;
   }
   iframe{
     position: relative;
