@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Woodenman</title>
-
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -22,12 +25,15 @@
 
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
+
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-md navbar-light">
-    <a class="logo" href="wellcome.html"><h1>Anton <br> Woodenman</h1></a>
+    <a class="logo" href="index.html">
+      <h1>Anton <br> Woodenman</h1>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -69,7 +75,127 @@
 
   </nav>
 
-  <div class="topContainer">
-    <img class="myPhoto" src="me.jpg" alt="me">
+<div class="container-contact">
+
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>Hey, my name is Anton Abramov.</h3>
+    </div>
+    <div class="col-lg-6">
+      <img class="myPhoto" src="me.jpg" alt="me">
+    </div>
+    <div class="col-lg-6 ">
+      <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</h2>
+    </div>
 
   </div>
+  </div>
+
+
+  <div class="hr">
+    <hr style="width:30%">
+  </div>
+
+
+  <div class="container-contact">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 id="contactMe">Contact me</h3>
+        <div class="form-container">
+          <form name="frmContact" id="" frmContact"" method="post" action="" enctype="multipart/form-data" onsubmit="return validateContactForm()">
+
+            <div class="input-row">
+              <label style="padding-top: 20px;">Name</label> <span id="userName-info" class="info"></span><br /> <input type="text" class="input-field" name="userName" id="userName" />
+            </div>
+            <div class="input-row">
+              <label>Email</label> <span id="userEmail-info" class="info"></span><br /> <input type="text" class="input-field" name="userEmail" id="userEmail" />
+            </div>
+
+            <div class="input-row">
+              <label>Message</label> <span id="userMessage-info" class="info"></span><br />
+              <textarea name="content" id="content" class="input-field" cols="60" rows="6"></textarea>
+            </div>
+            <div>
+              <input type="submit" name="send" class="btn-submit" value="Send" />
+
+              <div id="statusMessage">
+                <?php
+                        if (! empty($message)) {
+                            ?>
+                <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                <?php
+                        }
+                        ?>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          function validateContactForm() {
+            var valid = true;
+
+            $(".info").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var userName = $("#userName").val();
+            var userEmail = $("#userEmail").val();
+            var subject = $("#subject").val();
+            var content = $("#content").val();
+
+            if (userName == "") {
+              $("#userName-info").html("Required.");
+              $("#userName").css('border', '#e66262 1px solid');
+              valid = false;
+            }
+            if (userEmail == "") {
+              $("#userEmail-info").html("Required.");
+              $("#userEmail").css('border', '#e66262 1px solid');
+              valid = false;
+            }
+            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+              $("#userEmail-info").html("Invalid Email Address.");
+              $("#userEmail").css('border', '#e66262 1px solid');
+              valid = false;
+            }
+
+            if (content == "") {
+              $("#userMessage-info").html("Required.");
+              $("#content").css('border', '#e66262 1px solid');
+              valid = false;
+            }
+            return valid;
+          }
+        </script>
+
+
+
+      </div>
+
+      <div class="col-lg-6">
+        <h3 id="contactMe">Social Media</h3>
+        <div class="socialIcons">
+          <a href="#"><i class="fab fa-facebook-messenger fa-7x"></i></a>
+          <a href="https://wa.me/972547451268"><i class="fab fa-whatsapp fa-7x"></i>
+            <a href="https://t.me/anton_woodenman"><i class="fab fa-telegram fa-7x"></i></a>
+        </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  </tbody>
+
+  </table>
+
+
+<footer id="contactFooter"></footer>
