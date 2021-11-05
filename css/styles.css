@@ -466,7 +466,7 @@ margin-left: 0;
 .myPhoto{
   margin-right: 0;
   position: inherit;
-  width: 400px;
+  width:inherit;
   margin-left: 0;
   }
 
