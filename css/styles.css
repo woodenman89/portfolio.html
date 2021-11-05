@@ -186,8 +186,14 @@ margin-top: 2rem;
 border: 0;
 font-size: 1.7rem;
 
+
 }
 
+
+
+.navbar-toggler-icon{
+background-color: white;
+}
 
 
 button:focus{
@@ -482,7 +488,7 @@ margin-left: 0;
     margin: 0;
   }
   h3{
-  padding: 5% 0 0 0;
+  padding: 5% 0 3% 0;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -497,6 +503,10 @@ margin-left: 0;
   #contactMe{
     padding-top: 7%;
     padding-bottom: 0;
+  }
+
+  .fa-7x{
+    width:inherit;
   }
 }
 
@@ -538,10 +548,10 @@ label{
   padding: 7% 5% 5% 5%;
 }
 
-.fa-7x:hover{
+.fa-6x:hover{
   color: black;
 }
 
-.fa-7x{
-  padding: 1.5%;
+.fa-6x{
+  padding: 0% 2% 2% 2%;
 }
