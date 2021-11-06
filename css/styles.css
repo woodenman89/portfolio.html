@@ -167,7 +167,7 @@ footer{
   font-size: 0.6rem;
 }
 /*SMARTPHONE*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar {
     position: relative;
     width: 100%;
@@ -452,7 +452,7 @@ margin-right: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container-gallery {
     column-count: 2;
   max-width: 768px;
